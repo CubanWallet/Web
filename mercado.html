@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado P2P</title>
+    <link rel="stylesheet" href="css/mercado.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <div class="texto-logo">
+                <img class="logo" src="logo.png" alt="Mi Wallet">
+                <span>Mi Wallet - Mercado P2P</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Formulario para publicar una oferta de venta -->
+        <section class="publicar-oferta">
+            <h2>Publicar Oferta de Venta</h2>
+            <form id="ofertaForm">
+                <label for="moneda">Moneda:</label>
+                <select id="moneda">
+                    <option value="LTC">Litecoin (LTC)</option>
+                    <option value="DOGE">Dogecoin (DOGE)</option>
+                    <option value="TRC">Tron (TRX)</option>
+                    <option value="USDT">Tether (USDT)</option>
+                    <option value="DGB">DigiByte (DGB)</option>
+                    <option value="MATIC">Matic (MATIC)</option>
+                </select>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" step="any" required>
+                <label for="USD">USD:</label>
+                <input type="USD" id="cantidad" step="any" required>
+                <label for="precio">Precio por unidad (en CUP):</label>
+                <input type="number" id="precio" step="any" required>
+                <label for="metodo">Método de pago:</label>
+                <select id="metodo">
+                    <option value="cup">Efectivo (CUP)</option>
+                    <option value="saldo">Saldo (CUP)</option>
+                </select>
+                <button type="submit">Publicar Oferta</button>
+            </form>
+        </section>
+
+        <!-- Lista de ofertas disponibles -->
+        <section class="ofertas">
+            <h2>Ofertas Disponibles</h2>
+            <table id="ofertasTable">
+                <thead>
+                    <tr>
+                        <th>Moneda</th>
+                        <th>Cantidad</th>
+                  
+                        <th>Precio por unidad (CUP)</th>
+                        <th>Método de pago</th>
+                        <th>USD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LTC</td>
+                        <td>0.5</td>
+                        <td>1000</td>
+                        <td>CUP</td>
+                        <td>Usuario123</td>
+                    </tr>
+                    <tr>
+                        <td>DOGE</td>
+                        <td>1000</td>
+                        <td>400</td>
+                        <td>Saldo</td>
+                        <td>leoxxfox</td>
+                    <!-- Agregar más ofertas aquí -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Información de contacto, enlaces a redes sociales, etc. -->
+    </footer>
+        <script src="java/mercado.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
