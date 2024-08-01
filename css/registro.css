@@ -1,0 +1,124 @@
+        @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+body {
+  background-color: white;
+  display: flex;  
+  justify-content: center; 
+  align-items: flex-start; 
+  min-height: 100vh;  
+  margin: 0;       
+  padding-top: 20px; 
+}
+
+.wallet-logo {
+  font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+  font-size: 60px;
+  font-weight: 1000;
+  color: #0099ff;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 25px 0;   /* Margen superior e inferior */
+  transition: transform 0.4s ease-in-out;
+  animation: bounce 2s infinite;
+    margin-bottom: 80px;
+}
+
+.contenedor {
+  max-width: 300px;     
+  padding: 20px;         /* Espacio adicional para el contenedor */
+  background-color: #C0C0C0; 
+  border: 2px solid #0099ff; 
+  border-radius: 10px;   
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff, #C0C0C0);
+}
+
+h1 {
+  color: #ddd;
+  margin-bottom: 20px; /* Mayor espacio debajo del h1 */
+  animation: bounce 1.5s infinite; 
+}
+
+input-group {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  width: 100%; 
+  margin-left: -52px;
+    margin-top: -35px
+}
+
+label {
+  color: black;
+  margin-bottom: -2px; 
+  
+}
+
+input, button {
+  width: 90%;
+  padding: 12px;
+  margin: 5px 0;  /* margen uniforme arriba y abajo */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+    margin-left:-8px;
+}
+
+button{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0; /* Espacio uniforme arriba y abajo */
+  margin-left: -12x;
+    margin-top: -50px;
+}
+
+
+
+
+
+buttons:hover {
+  background-color: #0056b3;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px; /* Espacio en la parte superior para enlaces */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+#error {
+  color: #003366; /* Un tono azul oscuro para el texto */
+  padding: 10px;
+  background: linear-gradient(135deg, #ffffff, #C0C0C0);
+  border: 1px solid #003366; /* Mismo azul oscuro para el borde */
+  border-radius: 60px; /* Bordes redondeados */
+  text-align: center;/* Un azul claro suave como fondo */
+  margin-top: -60px; 
+  margin-left: auto; /* Centra el elemento horizontalmente */
+  margin-right: auto; /* Centra el elemento horizontalmente */
+  max-width: 70%; /* Ancho máximo del 70% del contenedor principal */
+  margin-bottom: 50px; 
+  font-family: 'Lato', sans-serif;
+}

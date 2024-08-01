@@ -1,0 +1,222 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.balance {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.criptomoneda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 150px;
+}
+
+.logo-cripto {
+    width: 40px;
+    height: 40px;
+}
+
+.coin-image {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+header {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 100;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.texto-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    max-width: 50px;
+    height: auto;
+    margin-right: 0;
+}
+
+.texto-logo {
+    font-family: 'Lobster', cursive;
+    color: #0000FF;
+    font-size: 34px;
+  
+}
+
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.boton-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.icono-menu {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    position: relative;
+}
+
+.icono-menu::before,
+.icono-menu::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+}
+
+.icono-menu::before {
+    top: -6px;
+}
+
+.icono-menu::after {
+    top: 6px;
+}
+
+.lista-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-menu li {
+    border-bottom: 1px solid #eee;
+}
+
+.lista-menu li:last-child {
+    border-bottom: none;
+}
+
+.lista-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.lista-menu a:hover {
+    background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 767px) {
+    .menu-desplegable {
+        display: block;
+    }
+    .boton-menu {
+        display: block;
+    }
+    .lista-menu {
+        flex-direction: column;
+    }
+    .lista-menu.mostrar {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu-desplegable {
+        display: flex;
+        position: static;
+        width: auto;
+        box-shadow: none;
+    }
+    .boton-menu {
+        display: none;
+    }
+    .lista-menu {
+        flex-direction: row;
+    }
+    .criptomoneda {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.contenedor-iconos {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icono {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.icono img {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    margin: 0;
+    font-size: 12px;
+}
+
+.menu-footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.menu-footer a {
+    text-decoration: none;
+    color: #333;
+}
